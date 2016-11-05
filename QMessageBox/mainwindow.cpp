@@ -24,5 +24,6 @@ void MainWindow::on_pushButton_clicked()
 //    StandardButton warning
 
 //    QMessageBox::aboutQt(this, "My Title");
-    QMessageBox::critical(this, "My Title", "This is a information message.");
+//    QMessageBox::critical(this, "My Title", "This is a information message.");
+    QMessageBox::question(this, "My Question", "This is a question", QMessageBox::Yes | QMessageBox::No | QMessageBox::Abort);
 }
