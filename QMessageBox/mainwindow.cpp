@@ -25,5 +25,11 @@ void MainWindow::on_pushButton_clicked()
 
 //    QMessageBox::aboutQt(this, "My Title");
 //    QMessageBox::critical(this, "My Title", "This is a information message.");
-    QMessageBox::question(this, "My Question", "This is a question", QMessageBox::Yes | QMessageBox::No | QMessageBox::Abort);
+//    QMessageBox::question(this, "My Question", "This is a question", QMessageBox::Yes | QMessageBox::No | QMessageBox::Abort);
+
+    QMessageBox::StandardButton reply = QMessageBox::question(this, "My Question", "This is a question", QMessageBox::Yes | QMessageBox::No);
+    if (reply == QMessageBox::Yes)
+    {
+        QApplication::quit();
+    }
 }
