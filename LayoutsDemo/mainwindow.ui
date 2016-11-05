@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>503</width>
-    <height>359</height>
+    <width>591</width>
+    <height>380</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -68,27 +68,36 @@
      </widget>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QPushButton" name="pushButton_6">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="firstNameLabel">
         <property name="text">
-         <string>PushButton</string>
+         <string>First Name</string>
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_7">
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="firstNameLineEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lastNameLabel">
         <property name="text">
-         <string>PushButton</string>
+         <string>Last Name</string>
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_5">
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lastNameLineEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="phoneLabel">
         <property name="text">
-         <string>PushButton</string>
+         <string>Phone</string>
         </property>
        </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="phoneLineEdit"/>
       </item>
      </layout>
     </item>
@@ -99,7 +108,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>503</width>
+     <width>591</width>
      <height>18</height>
     </rect>
    </property>
