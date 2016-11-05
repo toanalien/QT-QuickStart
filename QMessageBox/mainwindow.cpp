@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "qmessagebox.h"
+#include "qdebug.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -31,5 +32,9 @@ void MainWindow::on_pushButton_clicked()
     if (reply == QMessageBox::Yes)
     {
         QApplication::quit();
+    }
+    else
+    {
+        qDebug() << "No is clicked";
     }
 }
