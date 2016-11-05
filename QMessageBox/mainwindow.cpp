@@ -16,5 +16,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QMessageBox::about(this, "My Title", "This is a custom message.");
+//    void about
+//    void aboutQt
+//    StandardButton critical
+//    StandardButton information
+//    StandardButton question
+//    StandardButton warning
+
+//    QMessageBox::aboutQt(this, "My Title");
+    QMessageBox::critical(this, "My Title", "This is a information message.");
 }
